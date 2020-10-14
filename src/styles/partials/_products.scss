@@ -1,0 +1,77 @@
+@import './colorPallete';
+
+#productCatalouge {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .product {
+    background: $color-bg;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 40%;
+  }
+  
+  .shop-item {
+    margin: 15px auto;
+  }
+  
+  .shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    color: $color-secondary-1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .shop-item-image {
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .shop-item-details {
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .shop-item-display {
+    display: inline-block;
+    text-decoration: line-through;
+    text-decoration-color: $color-danger;
+    text-decoration-style: solid;
+    color: $color-secondary-1;
+  }
+  .shop-item-price {
+    color: $color-secondary-1;
+    font-weight: bold;
+  }
+  
+  .shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .img-holder {
+    position: relative;
+    background-color: $color-white;
+    .discount {
+      position: absolute;
+      background: $color-success;
+      color: $color-white;
+      top: 20px;
+      left: 0;
+      display: block;
+      padding: 2px 8px;
+    }
+  }
+}
+
